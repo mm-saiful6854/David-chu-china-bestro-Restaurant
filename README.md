@@ -37,3 +37,31 @@ article p {property:value} ( every p that is inside at any level of article )
 3. :hover
 4. :active
 5. :nth-child(...)
+
+## Conflict Resolution
+1. Origin precedence ( when in conflict )
+	rule: last declaration wins
+
+2. Origin precedence ( when no conflict )
+	rule: declarations Merge
+
+3. Inheritance ( DOM Tree ) 
+	e.g. body {property:value} (affect all child and grand-child)
+
+4. specificity
+	rule: most specific selector combination wins
+	style -> id -> class,pseudo-class, number of elements. 
+
+## Background property
+ color, repeat, image, position
+
+## Position Elements by floating
+ floating elements can produce very flexible layouts
+ floats are taken out of normal document flow
+ floats don't have vertical margin collapse
+ to resume normal document flow, use the clear property
+
+ ## Relative and Absolute Element positioning
+  Static positioning : Normal document flow (default for all, except html)
+  Reletive positioning: Element is positioned relative to its position in normal document flow.
+

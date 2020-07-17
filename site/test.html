@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative and absolute positioning</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .bg-img{
+            position: absolute;
+            height: 500px;
+            width: 100%;
+            opacity: 0.7;
+        }
+        .h-title{
+            text-align: center;
+            font-size: 3em;
+            padding-top: 100px;
+        }
+        
+        .h-des{
+            text-align: center;
+            font-size: 0.75em; 
+        }
+        .container{
+            position: relative;
+            top: 200px;
+        }
+        .sec-1{
+            padding:20px;
+        }
+        .f-c{
+            float: left;
+            width: 50%;
+        }
+        .foo{
+            clear:left;
+            background-color: brown;
+            font-size: 1.5em;
+            padding: 10px;   
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="bg-img" src="banner1.jpg" alt="background banner">
+        <div class="h-title">
+            <h3>Coursera Course:</h3> 
+            <div>HTML, CSS, Javascript for web developer</div>
+            <br>
+            <p class="h-des">Topic: Element positioning</p>
+        </div>
+    </header>
+    <div class="container">
+
+    <section class="sec-1">
+        <div class="f-c">
+            <p>Static positioning: By default all html element is static, except html tag.</p>
+        </div>
+        <div class="s-c">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, dolor!</p>
+        </div>
+    </section>
+    <hr>
+    <footer class="foo">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iste unde possimus incidunt veniam repellat quibusdam ipsa, ratione voluptatem? Suscipit.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
