@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(226, 175, 175);
+    color:#fff;
+    font-size: 16px;
+}
+
+.navbar{
+    padding: 0;
+}
+.navbar-brand{
+    margin:20px;
+}
+.navbar-toggler {
+    margin: 20px;
+}
+
+#navbarSupportedContent{
+    background-color: darkseagreen;
+    margin: 0;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid #222;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color:#fff;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+    background-color: firebrick;
+}
+
+
+/* main-content */
+.container > h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 40px 0;
+}
+.container > .row .col-xs-12{
+    background-color: rgb(37, 147, 175);
+    padding: 30px;
+}
+.container > .row .col-xs-12 h4{
+    text-align: center;
+}
+
+.container > .row .col-xs-12 p{
+    text-align:justify;
+}
+
+/* extra large device */
+@media(min-width:1200px){
+    #navbarSupportedContent .navbar-nav {
+        display: none;
+    }
+}
+
+
+/* large device */
+@media(max-width:1199px) and (min-width:992px){
+    
+    #navbarSupportedContent .navbar-nav{
+        display: none;
+    }
+    
+}
+
+
+/* medium device */
+@media(max-width:991px) and (min-width:768px){
+    #navbarSupportedContent .navbar-nav{
+        display: none;
+    }
+}
+
+
+/* small device */
+@media(max-width:767px) and (min-width:576px){
+    #navbarSupportedContent .navbar-nav{
+        display: none;
+    }
+}
+
+
+/* extra small device */
+@media(max-width:575px){
+
+}

@@ -1,0 +1,393 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #61122f;
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+
+
+#header-nav {
+    background-color: #f6b319;
+}
+
+.logo{
+    display: inline-block;
+    padding:0;
+    margin-right:10px;   
+}
+
+
+.brand-name,.brand-name a{
+    display:inline-block;
+    font-family: 'Lora', serif;
+    color:brown;
+    text-shadow: 1px 1px 1px #222;
+    text-decoration: none;
+}
+
+#navbarSupportedContent a {
+    font-size: 1.2em;
+    color: brown;
+}
+
+.navbar-nav .active > .nav-link {
+    background-color: #E7E7E7;
+}
+
+
+#navbarSupportedContent a:hover{
+    background-color: #E7E7E7;
+} 
+
+#phone{
+    margin-left: 10px;
+    font-size:1.3em;
+}
+
+
+
+
+
+
+/* start first middle section */
+.banner{
+    clear:both;
+    margin: 30px;
+}
+
+/* end first middle section */
+
+/* start second middle section */
+
+.con{
+    margin:30px;
+}
+
+.col{
+    padding: 0;
+    
+}
+
+.menu{
+    background-image: url(../images/food1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.special{
+    background-image: url(../images/food2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.menu,.special, .map {
+    width: 100%;
+    height: 250px;
+    border: 2px solid #3f0C1F;
+    overflow: hidden;
+}
+
+.menu:hover, .special:hover, .map:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+.menu > p, .special > p , .map > p{
+    position: absolute;
+    bottom: 0;
+    right:0;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    text-align: center;
+    font-size: 1.6em;
+    background-color: #000;
+    color:#fff;
+    opacity: 0.6;
+    
+}
+
+
+
+
+/* end second middle section */
+
+
+
+
+/* Start Menu-categories page */
+
+.category-tile {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #3f0C1F;
+    margin: 0 auto 25px;
+    height: 250px;
+
+}
+
+.category-tile p{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #000;
+    color:#fff;
+    opacity: 0.6;
+}
+
+.category-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#category-title + div {
+    margin-bottom: 50px;
+}
+
+/* end Menu-categories page */
+
+
+/* start single-category page */
+.menu-item-photo {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid brown;
+}
+
+.menu-item-photo span{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #000;
+    color:#fff;
+    border-radius: 2ch;
+    padding: 2px 5px;
+}
+
+.menu-item-photo + p {
+    text-align: right;
+    font-size: 1.1em;
+}
+
+
+.menu-item-description p {
+     font-size: 1.4em;
+     text-shadow: 1px 1px 1px 1px #222;
+}
+
+.menu-item-description div {
+    font-style: italic;
+}
+
+
+
+
+/* end single-category page */
+
+
+
+
+/* start footer */
+
+#footer-id{
+    padding:10px;
+    background-color: #222;
+}
+
+#footer-id p{
+    margin-top:0;
+    margin-bottom:0;
+}
+
+#copyright{
+    margin:20px;
+    text-align: center;
+}
+/* end footer */
+
+
+
+
+/* media query */
+
+/* x large device */
+
+@media(min-width:1200px){
+    .navbar-nav .seperator{
+        display: none;
+    }
+    #phone div{
+        font-size: 0.8em;
+    color:#557c3e;
+        text-align: right;
+    }
+    .contact {
+        display: none;
+    }
+
+}
+
+/* large device */
+@media(min-width:992px) and (max-width:1199px){
+    .navbar-nav .seperator{
+        display: none;
+    }
+    #phone div{
+        font-size: 0.8em;
+        color:#557c3e;
+        text-align: right;
+    }
+
+    .contact {
+        display: none;
+    }
+}
+
+
+/* medium device */
+@media(min-width:768px) and (max-width: 991px) {
+    
+    .navbar-nav br {
+        display: none;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .navbar-nav .seperator{
+        background-color: brown;
+        width: 100%;
+        height: 5px;
+        
+    }
+    #phone{
+        display: none;
+    }
+    .banner img{
+        height: 500px;
+    }
+
+    .contact > a {
+        display: block;
+        margin: 20px 20px 0;
+        border-radius: 1ch;
+        background-color:#f6b319;
+        color: #557c3e;
+        font-size: 1.8em;
+        text-align: center; 
+        text-decoration: none;  
+    }
+
+    .contact > p {
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
+
+/* small device */
+@media(max-width:767px) and (min-width:576px) {
+    .logo{
+        display: none;
+    }
+    .col-sm-12{
+        margin-top: 10px;
+    }
+    .navbar-nav br {
+        display: none;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .navbar-nav .seperator{
+        background-color: brown;
+        width: 100%;
+        height: 5px;
+        
+    }
+    #phone{
+        display: none;
+        
+    }
+
+    .banner img{
+        height: 500px;
+    }
+    .contact > a {
+        display: block;
+        margin: 20px 20px 0;
+        border-radius: 1ch;
+        background-color:#f6b319;
+        color: #557c3e;
+        font-size: 1.8em;
+        text-align: center; 
+        text-decoration: none;  
+    }
+
+    .contact > p {
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
+
+/* extra small device */
+
+@media(max-width:575px) {
+    .logo{
+        display: none;
+    }
+    .col-sm-12{
+        margin-top: 10px;
+    }
+    .navbar-nav br {
+        display: none;
+    }
+    .nav-item {
+        text-align: center;
+    }
+    .navbar-nav .seperator{
+        background-color: brown;
+        width: 100%;
+        height: 5px;
+        
+    }
+    #phone{
+        display: none;
+        
+    }
+
+    .banner img{
+        height: 500px;
+    }
+
+    .contact > a {
+        display: block;
+        margin: 20px 20px 0;
+        border-radius: 1ch;
+        background-color:#f6b319;
+        color: #557c3e;
+        font-size: 1.8em;
+        text-align: center; 
+        text-decoration: none;  
+    }
+
+    .contact > p {
+        text-align: center;
+        font-size: 0.9em;
+    }
+}
